@@ -36,6 +36,7 @@ const UserSearch = () => {
                   name="date"
                   value={formData.date}
                   onChange={handleInputChange}
+                  className="custom-input"
                 />
               </Form.Group>
               <Form.Group>
@@ -45,6 +46,7 @@ const UserSearch = () => {
                   name="time"
                   value={formData.time}
                   onChange={handleInputChange}
+                  className="custom-input"
                 />
               </Form.Group>
               <Form.Group>
@@ -55,6 +57,7 @@ const UserSearch = () => {
                   value={formData.location}
                   onChange={handleInputChange}
                   placeholder="Enter location"
+                  className="custom-input"
                 />
               </Form.Group>
               <Form.Group>
@@ -66,9 +69,10 @@ const UserSearch = () => {
                   onChange={handleInputChange}
                   placeholder="Enter number of members"
                   min="1"
+                  className="custom-input"
                 />
               </Form.Group>
-              <Button variant="primary" onClick={handleSearch} className="w-100">
+              <Button variant="primary" onClick={handleSearch} className="w-100 custom-button">
                 Search Restaurants
               </Button>
             </Form>
