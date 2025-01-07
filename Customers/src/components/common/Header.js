@@ -52,6 +52,9 @@ class Header extends React.Component {
 			            <Nav.Link eventKey={1} as={NavLink} activeclassname="active" to="/offers">
              				<Icofont icon='sale-discount'/> Offers <Badge variant="danger">New</Badge>
 			            </Nav.Link>
+						<Nav.Link eventKey={1} as={NavLink} activeclassname="active" to="/booking/userSearch">
+             				<Icofont icon='restaurant'/> Book Restaurant 
+			            </Nav.Link>
 			            <NavDropdown title="Restaurants" alignRight className="border-0">
 			            	<NavDropdown.Item eventKey={2.1} as={NavLink} activeclassname="active" to="/listing">Listing</NavDropdown.Item>
 			            	<NavDropdown.Item eventKey={2.2} as={NavLink} activeclassname="active" to="/detail">Detail + Cart</NavDropdown.Item>
