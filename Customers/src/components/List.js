@@ -352,8 +352,8 @@ class List extends React.Component {
 			                     </Col>
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
-								   		title='Bite Me Sandwiches'
-										subTitle='North Indian • American • Pure veg'
+								   		title='Kacchi Bhai'
+										subTitle='Biriyani • American • Pure veg'
 									  	imageAlt='Product'
 									    image='img/list/2.png'
 									    imageClass='img-fluid item-img'
@@ -369,7 +369,7 @@ class List extends React.Component {
 			                     </Col>
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
-								   		title='Bite Me Sandwiches'
+								   		title='Sultans Dine'
 										subTitle='North Indian • American • Pure veg'
 									  	imageAlt='Product'
 									    image='img/list/3.png'

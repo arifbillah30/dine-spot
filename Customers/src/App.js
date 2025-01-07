@@ -15,6 +15,8 @@ import TrackOrder from './components/TrackOrder';
 import Invoice from './components/Invoice';
 import Checkout from './components/Checkout';
 import Detail from './components/Detail';
+import TableBook from './components/booking/tablebook';
+import UserSearch from './components/booking/UserSearch';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'react-select2-wrapper/css/select2.css';
@@ -41,6 +43,8 @@ class App extends React.Component  {
             <Route path="/checkout" exact component={Checkout} />
             <Route path="/thanks" exact component={Thanks} />
             <Route path="/detail" exact component={Detail} />
+            <Route path="/booking/tablebook" exact component={TableBook} />
+            <Route path="/booking/UserSearch" exact component={UserSearch} />
             <Route exact component={NotFound} />
           </Switch>
           {

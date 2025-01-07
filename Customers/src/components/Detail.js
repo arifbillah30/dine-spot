@@ -66,11 +66,11 @@ class Detail extends React.Component {
 	               <Row className="d-flex align-items-end">
 	                  <Col md={8}>
 	                     <div className="restaurant-detailed-header-left">
-	                        <Image fluid className="mr-3 float-left" alt="osahan" src="/img/1.jpg" />
-	                        <h2 className="text-white">Spice Hut Indian Restaurant</h2>
-	                        <p className="text-white mb-1"><Icofont icon="location-pin" /> 2036 2ND AVE, NEW YORK, NY 10029 <Badge  variant="success">OPEN</Badge>
+	                        <Image fluid className="mr-3 float-left" alt="osahan" src="./img/1.jpg" />
+	                        <h2 className="text-white">Spice Hut Restaurant</h2>
+	                        <p className="text-white mb-1"><Icofont icon="location-pin" /> ECB CHATTAR, DHAKA CANTONMENT <Badge  variant="success">OPEN</Badge>
 	                        </p>
-	                        <p className="text-white mb-0"><Icofont icon="food-cart" /> North Indian, Chinese, Fast Food, South Indian
+	                        <p className="text-white mb-0"><Icofont icon="food-cart" /> DHAKA CANTONMENT
 	                        </p>
 	                     </div>
 	                  </Col>
@@ -97,11 +97,7 @@ class Detail extends React.Component {
 		         <Container>
 		            <Row>
 		               <Col md={12}>
-		                  <span className="restaurant-detailed-action-btn float-right">
-		                     <Button variant='light' size='sm' className="border-light-btn mr-1" type="button"><Icofont icon="heart" className='text-danger' /> Mark as Favourite</Button>
-		                     <Button variant='light' size='sm' className="border-light-btn mr-1" type="button"><Icofont icon="cauli-flower" className='text-success' />  Pure Veg</Button>
-		                     <Button variant='outline-danger' size='sm' type="button"><Icofont icon="sale-discount" />  OFFERS</Button>
-		                  </span>
+		                 
 		                  <Nav  id="pills-tab">
 		                     <Nav.Item>
 		                        <Nav.Link eventKey="first">Order Online</Nav.Link>
@@ -503,6 +499,8 @@ class Detail extends React.Component {
 		                        <Icofont icon="sale-discount" />
 		                     </div>
 		                </div>
+
+						
 		               	<div className="generator-bg rounded shadow-sm mb-4 p-4 osahan-cart-item">
 	                     
                            <h5 className="mb-1 text-white">Your Order
