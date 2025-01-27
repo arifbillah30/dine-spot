@@ -233,7 +233,7 @@ const CalenderApp = ({ events, onDelete, onEdit }) => {
               <Col size="12">
                 <div className="form-group">
                   <label className="form-label" htmlFor="event-description">
-                    Event Description
+                    Table Description
                   </label>
                   <div className="form-control-wrap">
                     <textarea
@@ -248,7 +248,7 @@ const CalenderApp = ({ events, onDelete, onEdit }) => {
               </Col>
               <Col size="12">
                 <div className="form-group">
-                  <label className="form-label">Event Category</label>
+                  <label className="form-label">Table Category</label>
                   <div className="form-control-wrap">
                     <RSelect
                       options={eventOptions}

@@ -1,121 +1,85 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import {Row,Col,Container,Form} from 'react-bootstrap';
-import Select2 from 'react-select2-wrapper';
-import Icofont from 'react-icofont';
-import OwlCarousel from 'react-owl-carousel3';
-import ProductBox from './ProductBox';
-
-import CategoriesCarousel from '../common/CategoriesCarousel';
+import React from "react";
+import { Row, Col, Container, Form } from "react-bootstrap";
+import CategoriesCarousel from "../common/CategoriesCarousel";
+import "./TopSearch.css";
 
 class TopSearch extends React.Component {
+  render() {
+    return (
+      <section className="pt-5 pb-5 position-relative">
+        {/* Video Background */}
+        <video autoPlay loop muted className="video-background">
+          <source src="/video/top-back.webm" type="video/webm" />
+          <source src="/video/top-back.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-	render() {
-    	return (
-	      <section className="pt-5 pb-5 homepage-search-block position-relative">
-	         <div className="banner-overlay"></div>
-	         <Container>
-	            <Row className="d-flex align-items-center">
-	               <Col md={8}>
-	                  <div className="homepage-search-title">
-	                     <h1 className="mb-2 font-weight-normal"><span className="font-weight-bold">Book Your Favorite Restaurant
-						 </span> in Bangladesh</h1>
-	                     <h5 className="mb-5 text-secondary font-weight-normal">Lists of top restaurants, cafes, pubs, and bars in Melbourne, based on trends</h5>
-	                  </div>
-	                  <div className="homepage-search-form">
-	                     <Form className="form-noborder">
-	                        <div className="form-row">
-	                           <Form.Group className='col-lg-3 col-md-3 col-sm-12'>
-	                              <div className="location-dropdown">
-	                              	 <Icofont icon='location-arrow'/>
-	                                 <Select2 className="custom-select"
-		                                 data={[
-										    { text: 'Breakfast', id: 1 },
-										    { text: 'Lunch', id: 2 },
-										    { text: 'Dinner', id: 3 },
-										    { text: 'Cafés', id: 4 },
-										    { text: 'Delivery', id: 5 }
-										  ]}
-										  options={{
-										    placeholder: 'Quick Searches',
-										  }}
-	                                 />
-	                              </div>
-	                           </Form.Group>
-	                           <Form.Group className='col-lg-7 col-md-7 col-sm-12'>
-	                              <Form.Control type="text" placeholder="Enter your delivery location" size='lg' />
-	                              <Link className="locate-me" to="#"><Icofont icon='ui-pointer'/> Locate Me</Link>
-	                           </Form.Group>
-	                           <Form.Group className='col-lg-2 col-md-2 col-sm-12'>
-	                              <Link to="listing" className="btn btn-primary btn-block btn-lg btn-gradient">Search</Link>
-	                           </Form.Group>
-	                        </div>
-	                     </Form>
-	                  </div>
-	                  <h6 className="mt-4 text-shadow font-weight-normal">E.g. Beverages, Pizzas, Chinese, Bakery, Indian...</h6>
-	                  <CategoriesCarousel />
-	               </Col>
-	               <Col md={4}>
-	                  <div className="osahan-slider pl-4 pt-3">
-	                     <OwlCarousel nav loop {...options2} className="homepage-ad owl-theme">
-	                        <div className="item">
-								<ProductBox 
-							   		image='img/slider.png'
-							   		imageClass='img-fluid rounded'
-							   		imageAlt='carousel'
-							   		linkUrl='listing'
-							   	/>
-	                        </div>
-	                        <div className="item">
-								<ProductBox 
-							   		image='img/slider1.png'
-							   		imageClass='img-fluid rounded'
-							   		imageAlt='carousel'
-							   		linkUrl='listing'
-							   	/>
-	                        </div>
-	                        <div className="item">
-								<ProductBox 
-							   		image='img/slider.png'
-							   		imageClass='img-fluid rounded'
-							   		imageAlt='carousel'
-							   		linkUrl='listing'
-							   	/>
-	                        </div>
-	                     </OwlCarousel>
-	                  </div>
-	               </Col>
-	            </Row>
-	         </Container>
-	      </section>
-	    );
-	}
-}
+        {/* Overlay */}
+        <div className="banner-overlay"></div>
 
-const options2={
-	responsive: {
-        0:{
-            items:2,
-        },
-        764:{
-            items:2,
-        },
-        765: {
-          items: 1,
-        },
-        1200: {
-          items: 1,
-        },
-      },
-      lazyLoad: true,
-      loop: true,
-      autoplay: true,
-      autoplaySpeed: 1000,
-      dots: false,
-      autoplayTimeout: 2000,
-      nav: true,
-      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-      autoplayHoverPause: true,
+        {/* Centered Content */}
+        <div className="center-content">
+          <Container>
+            <Row className="d-flex align-items-center justify-content-center text-center">
+              <Col md={8}>
+                <div className="homepage-search-title">
+                  <h1 className="mb-2 font-weight-normal">
+                    <span className="font-weight-bold">
+                      Book Your Favorite Restaurant
+                    </span>{" "}
+                    in Bangladesh
+                  </h1>
+                  <h5 className="mb-5 text-secondary font-weight-normal">
+                    Lists of top restaurants, cafes, pubs, and bars in
+                    Melbourne, based on trends
+                  </h5>
+                </div>
+
+                {/* Horizontal Search Bar */}
+                <Form className="search-bar d-flex align-items-center">
+                  <div className="search-item">
+                    <Form.Control type="date" />
+                  </div>
+                  <div className="search-item">
+                    <Form.Control as="select">
+                      <option value="19:00">7:00 PM</option>
+                      <option value="20:00">8:00 PM</option>
+                      <option value="21:00">9:00 PM</option>
+                    </Form.Control>
+                  </div>
+                  <div className="search-item">
+                    <Form.Control as="select">
+                      <option value="1">1 person</option>
+                      <option value="2">2 people</option>
+                      <option value="3">3 people</option>
+                    </Form.Control>
+                  </div>
+                  <div className="search-item flex-grow-1">
+                    <Form.Control
+                      type="text"
+                      placeholder="Location, Restaurant, or Cuisine"
+                    />
+                  </div>
+                  <button className="btn btn-danger search-btn">
+                    Let's Go
+                  </button>
+                </Form>
+
+                <p className="text-secondary mt-2">
+                  It looks like you're in <b>Dhaka Division</b>. Not correct?{" "}
+                  <a href="#" className="text-danger">
+                    Get current location
+                  </a>
+                </p>
+
+                <CategoriesCarousel />
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </section>
+    );
+  }
 }
 
 export default TopSearch;

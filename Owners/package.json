@@ -1,7 +1,6 @@
 {
-  "name": "DashliteReact-Demo2",
-  "homepage": "https://react.dashlite.net/demo2/",
-  "version": "1.8.0",
+  "name": "dine-spot-owners",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
@@ -41,7 +40,7 @@
     "react-modal-video": "^2.0.2",
     "react-quilljs": "^2.0.4",
     "react-router": "^6.27.0",
-    "react-router-dom": "^6.27.0",
+    "react-router-dom": "^6.28.1",
     "react-scripts": "5.0.1",
     "react-select": "^5.8.2",
     "react-slick": "^0.30.2",
@@ -58,7 +57,7 @@
     "web-vitals": "^4.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env PORT=4000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -82,6 +81,11 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  }
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "cross-env": "^7.0.3"
+  },
+  "description": "dine-spot",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

@@ -32,7 +32,7 @@ const Calender = () => {
     endDate: new Date(),
     theme:{
       value: "fc-event-primary",
-      label: "Company",
+      label: "General",
     }
   });
   const [theme, settheme] = useState("");
@@ -51,7 +51,7 @@ const Calender = () => {
       endDate: new Date(),
       theme:{
         value: "fc-event-primary",
-        label: "Company",
+        label: "General",
       }
     });
   };
@@ -73,7 +73,7 @@ const Calender = () => {
     updateEvent([...mockEvents, newEvent]);
     settheme({
       value: "fc-event-primary",
-      label: "Company",
+      label: "General",
     });
     toggle();
     resetForm();
@@ -102,12 +102,12 @@ const Calender = () => {
         <BlockHead size="sm">
           <BlockBetween>
             <BlockHeadContent>
-              <BlockTitle page>Calendar</BlockTitle>
+              <BlockTitle page>Add Reservations</BlockTitle>
             </BlockHeadContent>
             <BlockHeadContent>
               <Button color="primary" onClick={toggle}>
                 <Icon name="plus" />
-                <span>Add Event</span>
+                <span>Add Table</span>
               </Button>
             </BlockHeadContent>
           </BlockBetween>
@@ -119,18 +119,18 @@ const Calender = () => {
         </Block>
       </Content>
       <Modal isOpen={modal} toggle={() => onFormCancel()} className="modal-md">
-        <ModalHeader toggle={() => onFormCancel()}>Add Event</ModalHeader>
+        <ModalHeader toggle={() => onFormCancel()}>Add Table</ModalHeader>
         <ModalBody>
           <form className="form-validate is-alter" onSubmit={handleSubmit(handleFormSubmit)}>
             <Row className="gx-4 gy-3">
               <Col size="12">
                 <div className="form-group">
                   <label className="form-label" htmlFor="event-title">
-                    Event Title
+                    No of Chair
                   </label>
                   <div className="form-control-wrap">
                     <input
-                      type="text"
+                      type="number"
                       id="event-title"
                       {...register('title', { required: true })}
                       value={formData.title}
@@ -203,7 +203,7 @@ const Calender = () => {
               <Col size="12">
                 <div className="form-group">
                   <label className="form-label" htmlFor="event-description">
-                    Event Description
+                    Table Description
                   </label>
                   <div className="form-control-wrap">
                     <textarea
@@ -219,7 +219,7 @@ const Calender = () => {
               </Col>
               <Col size="12">
                 <div className="form-group">
-                  <label className="form-label">Event Category</label>
+                  <label className="form-label">Table Category</label>
                   <div className="form-control-wrap">
                     <RSelect
                       options={eventOptions}
@@ -233,7 +233,7 @@ const Calender = () => {
                 <ul className="d-flex justify-content-between gx-4 mt-1">
                   <li>
                     <Button type="submit" color="primary">
-                      Add Event
+                      Add Table
                     </Button>
                   </li>
                   <li>

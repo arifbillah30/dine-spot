@@ -4,9 +4,6 @@ import { CustomerProvider } from "../pages/panel/e-commerce/customer/CustomerCon
 import { ProductContextProvider } from "../pages/pre-built/products/ProductContext";
 import { UserContextProvider } from "../pages/pre-built/user-manage/UserContext";
 
-import Homepage from "../pages/Homepage";
-import Sales from "../pages/Sales";
-import Analytics from "../pages/Analytics";
 
 import EcomOrder from "../pages/panel/e-commerce/order/OrderDefault";
 import EcomSupport from "../pages/panel/e-commerce/support/Messages";
@@ -142,39 +139,12 @@ const Router = () => {
 
   return (
       <Routes>
-        {/*Panel */}
-        {/* <Route exact path={`${process.env.PUBLIC_URL}/ecommerce/index`} component={EcomDashboard}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/ecommerce/orders`} component={EcomOrder}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/ecommerce/products`} component={EcomProducts}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/ecommerce/support`} component={EcomSupport}></Route>
-        <Route
-          exact
-          path={`${process.env.PUBLIC_URL}/ecommerce/customer`}
-          render={() => (
-            <CustomerProvider>
-              <EcomCustomer />
-            </CustomerProvider>
-          )}
-        ></Route>
-        <Route
-          exact
-          path={`${process.env.PUBLIC_URL}/ecommerce/customer-details/:id`}
-          render={(props) => (
-            <CustomerProvider>
-              <EcomCustomerDetails {...props} />
-            </CustomerProvider>
-          )}
-        ></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/ecommerce/settings`} component={EcomSettings}></Route>
-        <Route exact path={`${process.env.PUBLIC_URL}/ecommerce/integration`} component={EcomIntegration}></Route> */}
 
         <Route path={`${process.env.PUBLIC_URL}`} element={<Layout />}>
           
           {/*Dashboards*/}
-          <Route index element={<Homepage />}></Route>
-          <Route path="sales" element={<Sales />}></Route>
-          <Route path="analytics" element={<Analytics />}></Route>
-          <Route path="_blank" element={<Blank />}></Route>
+          <Route index element={<EcomDashboard />}></Route>
+   
 
           <Route path="ecommerce" >
             <Route path="index" element={<EcomDashboard />}></Route>

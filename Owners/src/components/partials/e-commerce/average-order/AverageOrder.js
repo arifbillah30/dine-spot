@@ -11,7 +11,7 @@ const AverageOrder = () => {
         <div className="card-inner">
           <div className="card-title-group mt-n1">
             <div className="card-title">
-              <h6 className="title">Averarge order</h6>
+              <h6 className="title">Averarge Bookigs</h6>
             </div>
             <div className="card-tools me-n1">
               <UncontrolledDropdown>
@@ -68,7 +68,7 @@ const AverageOrder = () => {
           </div>
           <div className="data">
             <div className="data-group">
-              <div className="amount">$463.35</div>
+              <div className="amount">46</div>
               <div className="info text-end">
                 <span className="change up text-danger">
                   <Icon name="arrow-long-up"></Icon>4.63%
@@ -78,7 +78,7 @@ const AverageOrder = () => {
               </div>
             </div>
           </div>
-          <h6 className="sub-title">Orders over time</h6>
+          <h6 className="sub-title">Bookings over time</h6>
         </div>
         <div className="nk-ecwg2-ck">
           <AverageOrderChart state={data} />

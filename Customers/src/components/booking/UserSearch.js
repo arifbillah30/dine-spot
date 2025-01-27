@@ -19,12 +19,12 @@ const UserSearch = () => {
   const handleSearch = () => {
     // Simulate search action
     console.log('Searching with the following details:', formData);
-    alert(`Searching restaurants at ${formData.location} for ${formData.members} members on ${formData.date} at ${formData.time}`);
+    alert('Booked');
   };
 
   return (
     <Container className="mt-5">
-      <h1 className="text-center mb-4">Search Restaurants</h1>
+      <h1 className="text-center mb-4">Restaurants Resevation</h1>
       <Row className="justify-content-center">
         <Col md={6}>
           <Card className="p-4 shadow">
@@ -49,7 +49,7 @@ const UserSearch = () => {
                   className="custom-input"
                 />
               </Form.Group>
-              <Form.Group>
+              {/* <Form.Group>
                 <Form.Label>Enter Location</Form.Label>
                 <Form.Control
                   type="text"
@@ -59,7 +59,7 @@ const UserSearch = () => {
                   placeholder="Enter location"
                   className="custom-input"
                 />
-              </Form.Group>
+              </Form.Group> */}
               <Form.Group>
                 <Form.Label>Number of Members</Form.Label>
                 <Form.Control
@@ -72,8 +72,19 @@ const UserSearch = () => {
                   className="custom-input"
                 />
               </Form.Group>
+              <Form.Group>
+  <Form.Label>Special Instruction</Form.Label>
+  <Form.Control
+    type="text"
+    name="specialInstruction"
+    value={formData.specialInstruction || ''}
+    onChange={handleInputChange}
+    placeholder="Enter special instructions (optional)"
+    className="custom-input"
+  />
+</Form.Group>
               <Button variant="primary" onClick={handleSearch} className="w-100 custom-button">
-                Search Restaurants
+                Take Reservation
               </Button>
             </Form>
           </Card>
