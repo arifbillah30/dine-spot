@@ -176,7 +176,7 @@ class Detail extends React.Component {
                           <Col md={4} sm={6} className="mb-4">
                             <BestSeller
                               id={1}
-                              title="World Famous"
+                              title="Egg Sandwich"
                               subTitle="North Indian • American • Pure veg"
                               imageAlt="Product"
                               image="img/list/1.png"
@@ -670,7 +670,7 @@ class Detail extends React.Component {
                     <p className="mb-0">
                       60% off on orders above $99 | Use coupon{" "}
                       <span className="text-danger font-weight-bold">
-                        OSAHAN50
+                      DINESPOT50
                       </span>
                     </p>
                     <div className="icon-overlap">

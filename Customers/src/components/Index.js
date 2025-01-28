@@ -64,15 +64,15 @@ class Index extends React.Component {
 			               	  <OwlCarousel nav loop {...options} className="owl-carousel-four owl-theme">
 			                     <div className="item">
 			                        <CardItem 
-								   		title='World Famous'
+								   		title='Egg Sandwich'
 										subTitle='North Indian • American • Pure veg'
 									  	imageAlt='Product'
 									    image='img/list/1.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
-									    offerText='65% off | Use Coupon OSAHAN50'
+									    offerText='65% off | Use Coupon DINESPOT50'
 										time='20–25 min'
-										price='$250 FOR TWO'
+										price='1500tk FOR TWO'
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -81,32 +81,32 @@ class Index extends React.Component {
 			                     </div>
 			                     <div className="item">
 			                        <CardItem 
-								   		title='Bite Me Sandwiches'
-										subTitle='North Indian • American • Pure veg'
-									  	imageAlt='Product'
-									    image='img/list/3.png'
-									    imageClass='img-fluid item-img'
-									    linkUrl='detail'
-									    offerText='65% off | Use Coupon OSAHAN50'
-										time='15–25 min'
-										price='$100 FOR TWO'
-										showPromoted={true}
-										promotedVariant='dark'
-										favIcoIconColor='text-danger'
-										rating='3.1 (300+)'
+								   		title='Vegetable rice Ball'
+										   subTitle='North Indian • American • Pure veg'
+											 imageAlt='Product'
+										   image='img/list/3.png'
+										   imageClass='img-fluid item-img'
+										   linkUrl='detail'
+										   offerText='25% off | Use Coupon DINESPOT50'
+										   time='15–25 min'
+										   price='1500tk FOR TWO'
+										   showPromoted={true}
+										   promotedVariant='dark'
+										   favIcoIconColor='text-danger'
+										   rating='3.1 (300+)'
 								   	/>
 			                     </div>
 			                     <div className="item">
 			                        <CardItem 
-								   		title='The osahan Restaurant'
+								   		title='Sweet-item'
 										subTitle='North Indian • American • Pure veg'
 									  	imageAlt='Product'
 									    image='img/list/6.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
-									    offerText='65% off | Use Coupon OSAHAN50'
+									    offerText='25% off | Use Coupon DINESPOT50'
 										time='20–25 min'
-										price='$500 FOR TWO'
+										price='2500tk FOR TWO'
 										showPromoted={true}
 										promotedVariant='danger'
 										favIcoIconColor='text-dark'
@@ -115,19 +115,19 @@ class Index extends React.Component {
 			                     </div>
 			                     <div className="item">
 			                        <CardItem 
-								   		title='Polo Lounge'
-										subTitle='North Indian • American • Pure veg'
-									  	imageAlt='Product'
-									    image='img/list/9.png'
-									    imageClass='img-fluid item-img'
-									    linkUrl='detail'
-									    offerText='65% off | Use Coupon OSAHAN50'
-										time='20–25 min'
-										price='$250 FOR TWO'
-										showPromoted={true}
-										promotedVariant='dark'
-										favIcoIconColor='text-danger'
-										rating='3.1 (300+)'
+								   		title='Family-Combo'
+										   subTitle='North Indian • American • Pure veg'
+											 imageAlt='Product'
+										   image='img/list/9.png'
+										   imageClass='img-fluid item-img'
+										   linkUrl='detail'
+										   offerText='65% off | Use Coupon DINESPOT50'
+										   time='15–25 min'
+										   price='3100tk FOR TWO'
+										   showPromoted={true}
+										   promotedVariant='dark'
+										   favIcoIconColor='text-danger'
+										   rating='3.1 (300+)'
 								   	/>
 			                     </div>
 			                  </OwlCarousel>
@@ -135,7 +135,7 @@ class Index extends React.Component {
 			            </Row>
 			         </Container>
 			    </section>
-			    <section className="section pt-5 pb-5 bg-white becomemember-section border-bottom">
+			    <section className="section pt-5 pb-5 bg-white become member-section border-bottom">
 			         <Container>
 			         	<SectionHeading 
 			         		heading='Become a Member'
