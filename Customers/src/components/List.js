@@ -56,28 +56,28 @@ class List extends React.Component {
 											        type='checkbox'
 											        defaultChecked={true}
 											        id='custom-cb1'
-											        label={<React.Fragment>Ludhiana Junction <small className="text-black-50">230</small></React.Fragment>}
+											        label={<React.Fragment>Gulsan <small className="text-black-50">230</small></React.Fragment>}
 											      />
 
 											      <Form.Check 
 											        custom
 											        type='checkbox'
 											        id='custom-cb2'
-											        label={<React.Fragment>Model Town <small className="text-black-50">95</small></React.Fragment>}
+											        label={<React.Fragment> New Model Town<small className="text-black-50">95</small></React.Fragment>}
 											      />
 
 											      <Form.Check 
 											        custom
 											        type='checkbox'
 											        id='custom-cb3'
-											        label={<React.Fragment>Civil Lines <small className="text-black-50">35</small></React.Fragment>}
+											        label={<React.Fragment>Dhanmondi <small className="text-black-50">35</small></React.Fragment>}
 											      />
 
 											      <Form.Check 
 											        custom
 											        type='checkbox'
 											        id='custom-cb4'
-											        label={<React.Fragment>Dugri <small className="text-black-50">46</small></React.Fragment>}
+											        label={<React.Fragment>Mohammadpur <small className="text-black-50">46</small></React.Fragment>}
 											      />
 
 											      <Form.Check 
@@ -320,10 +320,10 @@ class List extends React.Component {
 										        type='radio'
 										        name='partner'
 										        id='custom-cb28'
-										        label='Osahan Eat'
+										        label='Dinespot Eat'
 										      />
 			                                 <hr />
-			                                 <small className="text-success">Use code OSAHAN50 to get 50% OFF (up to $30) on first 5 orders. T&Cs apply.</small>
+			                                 <small className="text-success">Use code DINESPOT50 to get 50% OFF (up to $30) on first 5 orders. T&Cs apply.</small>
 			                              </div>
 			                           </div>
 			                        </div>
@@ -335,15 +335,15 @@ class List extends React.Component {
 			                  <Row>
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
-								   		title='Bite Me Sandwiches'
+								   		title='Egg Sandwich'
 										subTitle='North Indian • American • Pure veg'
 									  	imageAlt='Product'
 									    image='img/list/1.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
-									    offerText='65% off | Use Coupon OSAHAN50'
+									    offerText='35% off | Use Coupon DINESPOT50'
 										time='15–25 min'
-										price='$100 FOR TWO'
+										price='1500tk FOR TWO'
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -353,14 +353,14 @@ class List extends React.Component {
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
 								   		title='Kacchi Bhai'
-										subTitle='Biriyani • American • Pure veg'
+										subTitle='Cashew Nut Salad • American • Pure veg'
 									  	imageAlt='Product'
 									    image='img/list/2.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
-									    offerText='65% off | Use Coupon OSAHAN50'
+									    offerText='50% off | Use Coupon DINESPOT50'
 										time='15–25 min'
-										price='$100 FOR TWO'
+										price='1800tk FOR TWO'
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -369,15 +369,15 @@ class List extends React.Component {
 			                     </Col>
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
-								   		title='Sultans Dine'
+								   		title='Vegetable Ball'
 										subTitle='North Indian • American • Pure veg'
 									  	imageAlt='Product'
 									    image='img/list/3.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
-									    offerText='65% off | Use Coupon OSAHAN50'
+									    offerText='25% off | Use Coupon DINESPOT50'
 										time='15–25 min'
-										price='$100 FOR TWO'
+										price='1500tk FOR TWO'
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -386,15 +386,15 @@ class List extends React.Component {
 			                     </Col>
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
-								   		title='Bite Me Sandwiches'
+								   		title='Soup-items'
 										subTitle='North Indian • American • Pure veg'
 									  	imageAlt='Product'
 									    image='img/list/4.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
-									    offerText='65% off | Use Coupon OSAHAN50'
+									    offerText='35% off | Use Coupon DINESPOT50'
 										time='15–25 min'
-										price='$100 FOR TWO'
+										price='1200tk FOR TWO'
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -403,15 +403,15 @@ class List extends React.Component {
 			                     </Col>
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
-								   		title='Bite Me Sandwiches'
+								   		title='Burger Combo'
 										subTitle='North Indian • American • Pure veg'
 									  	imageAlt='Product'
 									    image='img/list/5.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
-									    offerText='65% off | Use Coupon OSAHAN50'
+									    offerText='25% off | Use Coupon DINESPOT50'
 										time='15–25 min'
-										price='$100 FOR TWO'
+										price='2500tk FOR TWO'
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -420,15 +420,15 @@ class List extends React.Component {
 			                     </Col>
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
-								   		title='Bite Me Sandwiches'
+								   		title='Sweet Combo Package'
 										subTitle='North Indian • American • Pure veg'
 									  	imageAlt='Product'
 									    image='img/list/6.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
-									    offerText='65% off | Use Coupon OSAHAN50'
+									    offerText='65% off | Use Coupon DINESPOT50'
 										time='15–25 min'
-										price='$100 FOR TWO'
+										price='2100tk FOR TWO'
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -437,15 +437,15 @@ class List extends React.Component {
 			                     </Col>
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
-								   		title='Bite Me Sandwiches'
+								   		title='American Rice Bowl'
 										subTitle='North Indian • American • Pure veg'
 									  	imageAlt='Product'
 									    image='img/list/7.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
-									    offerText='65% off | Use Coupon OSAHAN50'
+									    offerText='15% off | Use Coupon DINESPOT50'
 										time='15–25 min'
-										price='$100 FOR TWO'
+										price='2500tk FOR TWO'
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -454,15 +454,15 @@ class List extends React.Component {
 			                     </Col>
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
-								   		title='Bite Me Sandwiches'
+								   		title='Special Salad'
 										subTitle='North Indian • American • Pure veg'
 									  	imageAlt='Product'
 									    image='img/list/8.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
-									    offerText='65% off | Use Coupon OSAHAN50'
+									    offerText='65% off | Use Coupon DINESPOT50'
 										time='15–25 min'
-										price='$100 FOR TWO'
+										price='1900tk FOR TWO'
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -471,15 +471,15 @@ class List extends React.Component {
 			                     </Col>
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
-								   		title='Bite Me Sandwiches'
+								   		title='Chinese-items'
 										subTitle='North Indian • American • Pure veg'
 									  	imageAlt='Product'
 									    image='img/list/9.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
-									    offerText='65% off | Use Coupon OSAHAN50'
+									    offerText='65% off | Use Coupon DINESPOT50'
 										time='15–25 min'
-										price='$100 FOR TWO'
+										price='3100tk FOR TWO'
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'

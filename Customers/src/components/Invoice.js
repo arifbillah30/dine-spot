@@ -18,10 +18,10 @@ class Invoice extends React.Component {
 		         <Container>
 		            <Row>
 		               <Col md={8} className="mx-auto">
-		                  <div className="p-5 osahan-invoice bg-white shadow-sm">
+		                  <div className="p-5 Dine-invoice bg-white shadow-sm">
 		                     <Row className="mb-5 pb-3">
 		                        <Col md={8} xs={10}>
-		                           <h3 className="mt-0">Thanks for choosing <strong className="text-secondary">Osahan Eat</strong>, Gurdeep ! Here are your order details: </h3>
+		                           <h3 className="mt-0">Thanks for choosing <strong className="text-secondary">Dinespot Eat</strong>, Rakib! Here are your order details: </h3>
 		                        </Col>
 		                        <Col md={4} xs={2} className="pl-0 text-right">
 		                           <p className="mb-4 mt-2">
@@ -58,11 +58,11 @@ class Invoice extends React.Component {
 		                           />
 		                           <HeadingValue 
 		                           		className="text-primary"
-		                           		value='Gurdeep Singh Osahan'
+		                           		value=' Sakib Mahmud '
 		                           />
 		                           <HeadingValue 
-		                           		heading='291/d/1, 291, Jawaddi Kalan, Ludhiana, Punjab
-		                              141002, India'
+		                           		heading='House 291/d, road no.9, Haji Camp, Uttara, Dhaka,
+		                               Bangladesh'
 		                           />
 		                        </Col>
 		                     </Row>
@@ -71,9 +71,9 @@ class Invoice extends React.Component {
 		                           <HeadingValue 
 		                           		heading='Ordered from:'
 		                           />
-		                           <h6 className="mb-1 text-black"><strong>Shahi Khansama</strong></h6>
+		                           <h6 className="mb-1 text-black"><strong>Rakib Hossain</strong></h6>
 		                           <HeadingValue 
-		                           		heading='Shop 3, Model Town Extension, Model Town, Ludhiana'
+		                           		heading='Shop 3, Model Town Extension, Banani 12 Dhaka'
 		                           />
 		                           <Table className="mt-3 mb-0">
 		                              <thead className="thead-light">
@@ -87,40 +87,40 @@ class Invoice extends React.Component {
 		                                 <tr>
 		                                    <td>Veg Masala Roll</td>
 		                                    <td className="text-right">01</td>
-		                                    <td className="text-right">$49</td>
+		                                    <td className="text-right">1200Tk</td>
 		                                 </tr>
 		                                 <tr>
-		                                    <td>Veg Burger</td>
+		                                    <td>Burger-Combo</td>
 		                                    <td className="text-right">01</td>
-		                                    <td className="text-right">$45</td>
+		                                    <td className="text-right">1500Tk</td>
 		                                 </tr>
 		                                 <tr>
-		                                    <td>Veg Penne Pasta in Red Sauce</td>
+		                                    <td>Veg Pasta in Red Sauce</td>
 		                                    <td className="text-right">01</td>
-		                                    <td className="text-right">$135</td>
+		                                    <td className="text-right">1300Tk</td>
 		                                 </tr>
 		                                 <tr>
 		                                    <td className="text-right" colSpan="2">Item Total:</td>
-		                                    <td className="text-right"> $229</td>
+		                                    <td className="text-right"> 2500Tk</td>
 		                                 </tr>
 		                                 <tr>
-		                                    <td className="text-right" colSpan="2">GST:</td>
-		                                    <td className="text-right"> $9.6</td>
+		                                    <td className="text-right" colSpan="2">VAT:</td>
+		                                    <td className="text-right"> 607Tk</td>
 		                                 </tr>
 		                                 <tr>
 		                                    <td className="text-right" colSpan="2">Delivery Charges:</td>
-		                                    <td className="text-right"> $00</td>
+		                                    <td className="text-right"> 100Tk</td>
 		                                 </tr>
 		                                 <tr>
-		                                    <td className="text-right" colSpan="2">Discount Applied (GURDEEP50):</td>
-		                                    <td className="text-right"> $141.97</td>
+		                                    <td className="text-right" colSpan="2">Discount Applied (DINESPOT30):</td>
+		                                    <td className="text-right">1597.45Tk</td>
 		                                 </tr>
 		                                 <tr>
 		                                    <td className="text-right" colSpan="2">
 		                                       <h6 className="text-success">Grand Total:</h6>
 		                                    </td>
 		                                    <td className="text-right">
-		                                       <h6 className="text-success"> $96</h6>
+		                                       <h6 className="text-success"> 7207Tk</h6>
 		                                    </td>
 		                                 </tr>
 		                              </tbody>
