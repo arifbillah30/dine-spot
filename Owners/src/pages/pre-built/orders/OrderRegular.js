@@ -215,7 +215,7 @@ const OrderRegular = () => {
         <BlockHead size="sm">
           <BlockBetween>
             <BlockHeadContent>
-              <BlockTitle page>Orders</BlockTitle>
+              <BlockTitle page>Table Booking</BlockTitle>
             </BlockHeadContent>
             <BlockHeadContent>
               <div className="toggle-wrap nk-block-tools-toggle">
@@ -236,7 +236,7 @@ const OrderRegular = () => {
                   }}
                 >
                   <Icon name="plus"></Icon>
-                  <span>Add Order</span>
+                  <span>Add Tables</span>
                 </Button>
               </div>
             </BlockHeadContent>
@@ -472,7 +472,7 @@ const OrderRegular = () => {
                   <span className="sub-text">Customer</span>
                 </DataTableRow>
                 <DataTableRow size="md">
-                  <span className="sub-text">Booking</span>
+                  <span className="sub-text"># of Booked Table</span>
                 </DataTableRow>
                 <DataTableRow>
                   <span className="sub-text">Total</span>
