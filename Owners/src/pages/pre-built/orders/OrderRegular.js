@@ -170,7 +170,7 @@ const OrderRegular = () => {
   const markAsDelivered = (id) => {
     let newData = data;
     let index = newData.findIndex((item) => item.id === id);
-    newData[index].status = "Delivered";
+    newData[index].status = "Ready for Booking";
     setData([...newData]);
   };
 
@@ -248,7 +248,7 @@ const OrderRegular = () => {
             <div className="card-inner">
               <div className="card-title-group">
                 <div className="card-title">
-                  <h5 className="title">All Orders</h5>
+                  <h5 className="title">All Reservations</h5>
                 </div>
                 <div className="card-tools me-n1">
                   <ul className="btn-toolbar gx-1">
@@ -472,7 +472,7 @@ const OrderRegular = () => {
                   <span className="sub-text">Customer</span>
                 </DataTableRow>
                 <DataTableRow size="md">
-                  <span className="sub-text">Purchased</span>
+                  <span className="sub-text">Booking</span>
                 </DataTableRow>
                 <DataTableRow>
                   <span className="sub-text">Total</span>
@@ -569,7 +569,7 @@ const OrderRegular = () => {
                       </DataTableRow>
                       <DataTableRow className="nk-tb-col-tools">
                         <ul className="nk-tb-actions gx-1">
-                          {item.status !== "Delivered" && (
+                          {item.status !== "Ready for Booking" && (
                             <li className="nk-tb-action-hidden" onClick={() => markAsDelivered(item.id)}>
                               <TooltipComponent
                                 tag="a"
@@ -674,118 +674,147 @@ const OrderRegular = () => {
         </Block>
 
         <Modal isOpen={view.add} toggle={() => onFormCancel()} className="modal-dialog-centered" size="lg">
-          <ModalBody>
-            <a href="#cancel" className="close">
-              {" "}
-              <Icon
-                name="cross-sm"
-                onClick={(ev) => {
-                  ev.preventDefault();
-                  onFormCancel();
-                }}
-              ></Icon>
-            </a>
-            <div className="p-2">
-              <h5 className="title">Add Order</h5>
-              <div className="mt-4">
-                <form onSubmit={handleSubmit(onFormSubmit)}>
-                  <Row className="g-3">
-                    <Col md="12">
-                      <div className="form-group">
-                        <label className="form-label" htmlFor="customer">
-                          Customer Name
-                        </label>
-                        <div className="form-control-wrap">
-                          <input
-                            type="text"
-                            className="form-control"
-                            {...register('customer', {
-                              required: "This field is required",
-                            })}
-                            onChange={(e) => setFormData({ ...formData, customer: e.target.value })}
-                            value={formData.customer} />
-                          {errors.customer && <span className="invalid">{errors.customer.message}</span>}
-                        </div>
-                      </div>
-                    </Col>
-                    <Col md="6">
-                      <div className="form-group">
-                        <label className="form-label" htmlFor="date">
-                          Date of order
-                        </label>
-                        <div className="form-control-wrap">
-                          <DatePicker
-                            selected={formData.date}
-                            className="form-control"
-                            onChange={(date) => setFormData({ ...formData, date: date })}
-                          />
-                          {errors.date && <span className="invalid">{errors.date.message}</span>}
-                        </div>
-                      </div>
-                    </Col>
-                    <Col md="6">
-                      <div className="form-group">
-                        <label className="form-label" htmlFor="purchased">
-                          Purchased Product
-                        </label>
-                        <div className="form-control-wrap">
-                          <input
-                            type="text"
-                            className="form-control"
-                            {...register('purchased', { required: "This is required" })}
-                            value={formData.purchased}
-                            onChange={(e) => setFormData({ ...formData, purchased: e.target.value })}/>
-                          {errors.purchased && <span className="invalid">{errors.purchased.message}</span>}
-                        </div>
-                      </div>
-                    </Col>
-                    <Col md="6">
-                      <div className="form-group">
-                        <label className="form-label" htmlFor="total">
-                          Total Price
-                        </label>
-                        <div className="form-control-wrap">
-                          <input
-                            type="number"
-                            className="form-control"
-                            {...register('total', { required: "This is required" })}
-                            value={formData.total}
-                            onChange={(e) => setFormData({ ...formData, total: e.target.value })}/>
-                          {errors.total && <span className="invalid">{errors.total.message}</span>}
-                        </div>
-                      </div>
-                    </Col>
-                    <Col md="6">
-                      <div className="form-group">
-                        <label className="form-label" htmlFor="status">
-                          Status
-                        </label>
-                        <div className="form-control-wrap">
-                          <RSelect
-                            name="status"
-                            options={[
-                              { value: "On Hold", label: "On Hold" },
-                              { value: "Delivered", label: "Delivered" },
-                            ]}
-                            onChange={(e) => setFormData({ ...formData, status: e.value })}
-                            value={{value: formData.status, label: formData.status}}
-                          />
-                        </div>
-                      </div>
-                    </Col>
-
-                    <Col size="12">
-                      <Button color="primary" type="submit">
-                        <Icon className="plus"></Icon>
-                        <span>Add Order</span>
-                      </Button>
-                    </Col>
-                  </Row>
-                </form>
+  <ModalBody>
+    <a href="#cancel" className="close">
+      <Icon
+        name="cross-sm"
+        onClick={(ev) => {
+          ev.preventDefault();
+          onFormCancel();
+        }}
+      ></Icon>
+    </a>
+    <div className="p-2">
+      <h5 className="title">Add Tables</h5>
+      <div className="mt-4">
+        <form onSubmit={handleSubmit(onFormSubmit)}>
+          <Row className="g-3">
+            <Col md="12">
+              <div className="form-group">
+                <label className="form-label" htmlFor="customer">Customer Name</label>
+                <div className="form-control-wrap">
+                  <input
+                    type="text"
+                    className="form-control"
+                    {...register('customer', { required: "This field is required" })}
+                    onChange={(e) => setFormData({ ...formData, customer: e.target.value })}
+                    value={formData.customer}
+                  />
+                  {errors.customer && <span className="invalid">{errors.customer.message}</span>}
+                </div>
               </div>
-            </div>
-          </ModalBody>
-        </Modal>
+            </Col>
+            
+            <Col md="6">
+              <div className="form-group">
+                <label className="form-label" htmlFor="date">Date of Order</label>
+                <div className="form-control-wrap">
+                  <DatePicker
+                    selected={formData.date}
+                    className="form-control"
+                    onChange={(date) => setFormData({ ...formData, date })}
+                  />
+                  {errors.date && <span className="invalid">{errors.date.message}</span>}
+                </div>
+              </div>
+            </Col>
+            
+            <Col md="6">
+              <div className="form-group">
+                <label className="form-label" htmlFor="openingTime">Opening Time</label>
+                <div className="form-control-wrap">
+                  <input
+                    type="time"
+                    className="form-control"
+                    {...register('openingTime', { required: "Opening time is required" })}
+                    onChange={(e) => setFormData({ ...formData, openingTime: e.target.value })}
+                    value={formData.openingTime}
+                  />
+                  {errors.openingTime && <span className="invalid">{errors.openingTime.message}</span>}
+                </div>
+              </div>
+            </Col>
+            
+            <Col md="6">
+              <div className="form-group">
+                <label className="form-label" htmlFor="purchased">Table's Description</label>
+                <div className="form-control-wrap">
+                  <input
+                    type="text"
+                    className="form-control"
+                    {...register('purchased', { required: "This is required" })}
+                    value={formData.purchased}
+                    onChange={(e) => setFormData({ ...formData, purchased: e.target.value })}
+                  />
+                  {errors.purchased && <span className="invalid">{errors.purchased.message}</span>}
+                </div>
+              </div>
+            </Col>
+            
+            <Col md="6">
+              <div className="form-group">
+                <label className="form-label" htmlFor="requiredTime">Required Time</label>
+                <div className="form-control-wrap">
+                  <RSelect
+                    name="requiredTime"
+                    options={[
+                      { value: "15min", label: "15 Minutes" },
+                      { value: "30min", label: "30 Minutes" },
+                      { value: "45min", label: "45 Minutes" },
+                      { value: "60min", label: "60 Minutes" }
+                    ]}
+                    onChange={(e) => setFormData({ ...formData, requiredTime: e.value })}
+                    value={{ value: formData.requiredTime, label: formData.requiredTime }}
+                  />
+                </div>
+              </div>
+            </Col>
+            
+            <Col md="6">
+              <div className="form-group">
+                <label className="form-label" htmlFor="total">Booking Price</label>
+                <div className="form-control-wrap">
+                  <input
+                    type="number"
+                    className="form-control"
+                    {...register('total', { required: "This is required" })}
+                    value={formData.total}
+                    onChange={(e) => setFormData({ ...formData, total: e.target.value })}
+                  />
+                  {errors.total && <span className="invalid">{errors.total.message}</span>}
+                </div>
+              </div>
+            </Col>
+            
+            <Col md="6">
+              <div className="form-group">
+                <label className="form-label" htmlFor="status">Status</label>
+                <div className="form-control-wrap">
+                  <RSelect
+                    name="status"
+                    options={[
+                      { value: "On Hold", label: "Booked" },
+                      { value: "Delivered", label: "Ready for Booking" }
+                    ]}
+                    onChange={(e) => setFormData({ ...formData, status: e.value })}
+                    value={{ value: formData.status, label: formData.status }}
+                  />
+                </div>
+              </div>
+            </Col>
+            
+            <Col size="12">
+              <Button color="primary" type="submit">
+                <Icon className="plus"></Icon>
+                <span>Add Tables</span>
+              </Button>
+            </Col>
+          </Row>
+        </form>
+      </div>
+    </div>
+  </ModalBody>
+</Modal>
 
         <Modal isOpen={view.details} toggle={() => onFormCancel()} className="modal-dialog-centered" size="lg">
           <ModalBody>

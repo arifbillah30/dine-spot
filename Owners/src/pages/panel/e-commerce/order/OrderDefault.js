@@ -516,7 +516,7 @@ const OrderDefault = () => {
               ></Icon>
             </a>
             <div className="p-2">
-              <h5 className="title">Add Order</h5>
+              <h5 className="title">Add Tables</h5>
               <div className="mt-4">
                 <form onSubmit={handleSubmit(onFormSubmit)}>
                   <Row className="g-3">
@@ -607,7 +607,7 @@ const OrderDefault = () => {
                     <Col size="12">
                       <Button color="primary" type="submit">
                         <Icon className="plus"></Icon>
-                        <span>Add Order</span>
+                        <span>Add Orders</span>
                       </Button>
                     </Col>
                   </Row>
