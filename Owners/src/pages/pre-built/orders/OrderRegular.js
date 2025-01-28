@@ -674,7 +674,8 @@ const OrderRegular = () => {
         </Block>
 
         <Modal isOpen={view.add} toggle={() => onFormCancel()} className="modal-dialog-centered" size="lg">
-  <ModalBody>
+ 
+        <ModalBody>
     <a href="#cancel" className="close">
       <Icon
         name="cross-sm"
@@ -689,7 +690,7 @@ const OrderRegular = () => {
       <div className="mt-4">
         <form onSubmit={handleSubmit(onFormSubmit)}>
           <Row className="g-3">
-            <Col md="12">
+            {/* <Col md="12">
               <div className="form-group">
                 <label className="form-label" htmlFor="customer">Customer Name</label>
                 <div className="form-control-wrap">
@@ -703,7 +704,7 @@ const OrderRegular = () => {
                   {errors.customer && <span className="invalid">{errors.customer.message}</span>}
                 </div>
               </div>
-            </Col>
+            </Col> */}
             
             <Col md="6">
               <div className="form-group">
@@ -737,13 +738,29 @@ const OrderRegular = () => {
             
             <Col md="6">
               <div className="form-group">
-                <label className="form-label" htmlFor="purchased">Table's Description</label>
+                <label className="form-label" htmlFor="closingTime">Closing Time</label>
+                <div className="form-control-wrap">
+                  <input
+                    type="time"
+                    className="form-control"
+                    {...register('closingTime', { required: "Closing time is required" })}
+                    onChange={(e) => setFormData({ ...formData, closingTime: e.target.value })}
+                    value={formData.closingTime}
+                  />
+                  {errors.closingTime && <span className="invalid">{errors.closingTime.message}</span>}
+                </div>
+              </div>
+            </Col>
+            
+            <Col md="6">
+              <div className="form-group">
+                <label className="form-label" htmlFor="tableType">Table Type</label>
                 <div className="form-control-wrap">
                   <input
                     type="text"
                     className="form-control"
-                    {...register('purchased', { required: "This is required" })}
-                    value={formData.purchased}
+                    {...register('tableType', { required: "This is required" })}
+                    value={formData.tableType}
                     onChange={(e) => setFormData({ ...formData, purchased: e.target.value })}
                   />
                   {errors.purchased && <span className="invalid">{errors.purchased.message}</span>}
@@ -753,12 +770,30 @@ const OrderRegular = () => {
             
             <Col md="6">
               <div className="form-group">
-                <label className="form-label" htmlFor="requiredTime">Required Time</label>
+                <label className="form-label" htmlFor="chair">Chair Selection</label>
                 <div className="form-control-wrap">
                   <RSelect
-                    name="requiredTime"
+                    name="chair"
                     options={[
-                      { value: "15min", label: "15 Minutes" },
+                      { value: "2chair", label: "2 Chairs" },
+                      { value: "4chair", label: "4 Chairs" },
+                      { value: "6chair", label: "6 Chairs" },
+                      { value: "8chair", label: "8 Chairs" }
+                    ]}
+                    onChange={(e) => setFormData({ ...formData, chair: e.value })}
+                    value={{ value: formData.chair, label: formData.chair }}
+                  />
+                </div>
+              </div>
+            </Col>
+            
+            <Col md="6">
+              <div className="form-group">
+                <label className="form-label" htmlFor="requiredTime">Allocated Time</label>
+                <div className="form-control-wrap">
+                  <RSelect
+                    name="Allocated Time"
+                    options={[{ value: "15min", label: "15 Minutes" },
                       { value: "30min", label: "30 Minutes" },
                       { value: "45min", label: "45 Minutes" },
                       { value: "60min", label: "60 Minutes" }
@@ -772,29 +807,12 @@ const OrderRegular = () => {
             
             <Col md="6">
               <div className="form-group">
-                <label className="form-label" htmlFor="total">Booking Price</label>
-                <div className="form-control-wrap">
-                  <input
-                    type="number"
-                    className="form-control"
-                    {...register('total', { required: "This is required" })}
-                    value={formData.total}
-                    onChange={(e) => setFormData({ ...formData, total: e.target.value })}
-                  />
-                  {errors.total && <span className="invalid">{errors.total.message}</span>}
-                </div>
-              </div>
-            </Col>
-            
-            <Col md="6">
-              <div className="form-group">
                 <label className="form-label" htmlFor="status">Status</label>
                 <div className="form-control-wrap">
                   <RSelect
                     name="status"
-                    options={[
-                      { value: "On Hold", label: "Booked" },
-                      { value: "Delivered", label: "Ready for Booking" }
+                    options={[{ value: "Booked", label: "Booked" },
+                      { value: "Ready for Booking", label: "Ready for Booking" }
                     ]}
                     onChange={(e) => setFormData({ ...formData, status: e.value })}
                     value={{ value: formData.status, label: formData.status }}
@@ -814,6 +832,10 @@ const OrderRegular = () => {
       </div>
     </div>
   </ModalBody>
+
+
+
+
 </Modal>
 
         <Modal isOpen={view.details} toggle={() => onFormCancel()} className="modal-dialog-centered" size="lg">
