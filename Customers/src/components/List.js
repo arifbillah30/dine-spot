@@ -320,10 +320,17 @@ class List extends React.Component {
 										        type='radio'
 										        name='partner'
 										        id='custom-cb28'
+<<<<<<< HEAD
+										        label='Osahan Eat'
+										      />
+			                                 <hr />
+			                                 <small className="text-success">Use code OSAHAN50 to get 50% OFF (up to $30) on first 5 orders. T&Cs apply.</small>
+=======
 										        label='DINESPOT Eat'
 										      />
 			                                 <hr />
 			                                 <small className="text-success">Use code DINESPOT50 to get 50% OFF (up to $30) on first 5 orders. T&Cs apply.</small>
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
 			                              </div>
 			                           </div>
 			                        </div>
@@ -341,9 +348,15 @@ class List extends React.Component {
 									    image='img/list/1.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
+<<<<<<< HEAD
+									    offerText='65% off | Use Coupon OSAHAN50'
+										time='15–25 min'
+										price='$100 FOR TWO'
+=======
 									    offerText='50% off | Use Coupon DINESPOT50'
 										time='15–25 min'
 										price='3600tk FOR TWO'
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -358,9 +371,15 @@ class List extends React.Component {
 									    image='img/list/2.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
+<<<<<<< HEAD
+									    offerText='65% off | Use Coupon OSAHAN50'
+										time='15–25 min'
+										price='$100 FOR TWO'
+=======
 									    offerText='50% off | Use Coupon DINESPOT50'
 										time='15–25 min'
 										price='3500tk FOR TWO'
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -370,14 +389,24 @@ class List extends React.Component {
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
 								   		title='Sultans Dine'
+<<<<<<< HEAD
+										subTitle='North Indian • American • Pure veg'
+=======
 										subTitle='North Indian • Chinese • Pure veg'
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
 									  	imageAlt='Product'
 									    image='img/list/3.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
+<<<<<<< HEAD
+									    offerText='65% off | Use Coupon OSAHAN50'
+										time='15–25 min'
+										price='$100 FOR TWO'
+=======
 									    offerText='60% off | Use Coupon DINESPOT50'
 										time='15–25 min'
 										price='4600tk FOR TWO'
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -387,14 +416,24 @@ class List extends React.Component {
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
 								   		title='Bite Me Sandwiches'
+<<<<<<< HEAD
+										subTitle='North Indian • American • Pure veg'
+=======
 										subTitle='North Indian • Chinese • Pure veg'
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
 									  	imageAlt='Product'
 									    image='img/list/4.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
+<<<<<<< HEAD
+									    offerText='65% off | Use Coupon OSAHAN50'
+										time='15–25 min'
+										price='$100 FOR TWO'
+=======
 									    offerText='50% off | Use Coupon DINESPOT50'
 										time='15–25 min'
 										price='5000tk FOR TWO'
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -404,14 +443,24 @@ class List extends React.Component {
 			                     <Col md={4} sm={6} className="mb-4 pb-2">
 			                        <CardItem 
 								   		title='Bite Me Sandwiches'
+<<<<<<< HEAD
+										subTitle='North Indian • American • Pure veg'
+=======
 										subTitle='North Indian • Chinese • Pure veg'
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
 									  	imageAlt='Product'
 									    image='img/list/5.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
+<<<<<<< HEAD
+									    offerText='65% off | Use Coupon OSAHAN50'
+										time='15–25 min'
+										price='$100 FOR TWO'
+=======
 									    offerText='65% off | Use Coupon DINESPOT50'
 										time='15–25 min'
 										price='4500tk FOR TWO'
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -426,9 +475,15 @@ class List extends React.Component {
 									    image='img/list/6.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
+<<<<<<< HEAD
+									    offerText='65% off | Use Coupon OSAHAN50'
+										time='15–25 min'
+										price='$100 FOR TWO'
+=======
 									    offerText='65% off | Use Coupon DINESPOT50'
 										time='15–25 min'
 										price='3500tk FOR TWO'
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -443,9 +498,15 @@ class List extends React.Component {
 									    image='img/list/7.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
+<<<<<<< HEAD
+									    offerText='65% off | Use Coupon OSAHAN50'
+										time='15–25 min'
+										price='$100 FOR TWO'
+=======
 									    offerText='65% off | Use Coupon DINESPOT50'
 										time='15–25 min'
 										price='2500tk FOR TWO'
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -460,9 +521,15 @@ class List extends React.Component {
 									    image='img/list/8.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
+<<<<<<< HEAD
+									    offerText='65% off | Use Coupon OSAHAN50'
+										time='15–25 min'
+										price='$100 FOR TWO'
+=======
 									    offerText='65% off | Use Coupon DINESPOT50'
 										time='15–25 min'
 										price='2500tk FOR TWO'
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'
@@ -477,9 +544,15 @@ class List extends React.Component {
 									    image='img/list/9.png'
 									    imageClass='img-fluid item-img'
 									    linkUrl='detail'
+<<<<<<< HEAD
+									    offerText='65% off | Use Coupon OSAHAN50'
+										time='15–25 min'
+										price='$100 FOR TWO'
+=======
 									    offerText='65% off | Use Coupon DINESPOT50'
 										time='15–25 min'
 										price='3000tk FOR TWO'
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
 										showPromoted={true}
 										promotedVariant='dark'
 										favIcoIconColor='text-danger'

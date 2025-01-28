@@ -65,7 +65,7 @@ const menu = [
         link: "/app-calender",
       },
       {
-        text: "View Reservations",
+        text: "Add Tables",
         link: "/order-list-regular",
       },
       {

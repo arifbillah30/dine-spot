@@ -181,8 +181,13 @@ class Detail extends React.Component {
                               imageAlt="Product"
                               image="img/list/1.png"
                               imageClass="img-fluid item-img"
+<<<<<<< HEAD
+                              price={250}
+                              priceUnit="$"
+=======
                               price={1800}
                               priceUnit="Tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                               isNew={true}
                               showPromoted={true}
                               promotedVariant="dark"
@@ -200,8 +205,13 @@ class Detail extends React.Component {
                               imageAlt="Product"
                               image="img/list/6.png"
                               imageClass="img-fluid item-img"
+<<<<<<< HEAD
+                              price={250}
+                              priceUnit="$"
+=======
                               price={1500}
                               priceUnit="Tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                               qty={1}
                               showPromoted={true}
                               promotedVariant="dark"
@@ -219,8 +229,13 @@ class Detail extends React.Component {
                               imageAlt="Product"
                               image="img/list/3.png"
                               imageClass="img-fluid item-img"
+<<<<<<< HEAD
+                              price={250}
+                              priceUnit="$"
+=======
                               price={1200}
                               priceUnit="Tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                               showPromoted={true}
                               promotedVariant="dark"
                               favIcoIconColor="text-danger"
@@ -239,29 +254,50 @@ class Detail extends React.Component {
                               <QuickBite
                                 id={1}
                                 title="Chicken Tikka Sub"
+<<<<<<< HEAD
+                                price={250}
+                                priceUnit="$"
+=======
                                 price={1500}
                                 priceUnit="Tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                 getValue={this.getQty}
                               />
                               <QuickBite
                                 id={2}
                                 title="Cheese corn Roll"
+<<<<<<< HEAD
+                                price={600}
+                                showBadge={true}
+                                badgeText="BEST SELLER"
+                                qty={1}
+                                priceUnit="$"
+=======
                                 price={1600}
                                 showBadge={true}
                                 badgeText="BEST SELLER"
                                 qty={1}
                                 priceUnit="Tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                 getValue={this.getQty}
                               />
                               <QuickBite
                                 id={3}
                                 title="Chicken Tikka Sub"
+<<<<<<< HEAD
+                                price={250}
+=======
                                 price={5000}
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                 showBadge={true}
                                 badgeText="Pure Veg"
                                 badgeVariant="success"
                                 qty={2}
+<<<<<<< HEAD
+                                priceUnit="$"
+=======
                                 priceUnit="Tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                 getValue={this.getQty}
                               />
                             </div>
@@ -279,8 +315,13 @@ class Detail extends React.Component {
                                 itemClass="menu-list"
                                 image="/img/5.jpg"
                                 title="Chicken Tikka Sub"
+<<<<<<< HEAD
+                                price={250}
+                                priceUnit="$"
+=======
                                 price={2000}
                                 priceUnit="Tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                 getValue={this.getQty}
                               />
                               <QuickBite
@@ -288,11 +329,19 @@ class Detail extends React.Component {
                                 itemClass="menu-list"
                                 title="Cheese corn Roll"
                                 image="/img/2.jpg"
+<<<<<<< HEAD
+                                price={600}
+                                showBadge={true}
+                                badgeText="BEST SELLER"
+                                qty={1}
+                                priceUnit="$"
+=======
                                 price={2500}
                                 showBadge={true}
                                 badgeText="BEST SELLER"
                                 qty={1}
                                 priceUnit="Tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                 getValue={this.getQty}
                               />
                               <QuickBite
@@ -300,11 +349,19 @@ class Detail extends React.Component {
                                 itemClass="menu-list"
                                 image="/img/3.jpg"
                                 title="Chicken Tikka Sub"
+<<<<<<< HEAD
+                                price={250}
+                                showBadge={true}
+                                badgeText="Pure Veg"
+                                badgeVariant="success"
+                                priceUnit="$"
+=======
                                 price={2500}
                                 showBadge={true}
                                 badgeText="Pure Veg"
                                 badgeVariant="success"
                                 priceUnit="Tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                 getValue={this.getQty}
                               />
                             </div>
@@ -320,54 +377,95 @@ class Detail extends React.Component {
                               <QuickBite
                                 id={1}
                                 title="Chicken Tikka Sub"
+<<<<<<< HEAD
+                                price={250}
+                                priceUnit="$"
+=======
                                 price={3000}
                                 priceUnit="Tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                 getValue={this.getQty}
                               />
                               <QuickBite
                                 id={2}
                                 title="Cheese corn Roll"
+<<<<<<< HEAD
+                                price={600}
+                                showBadge={true}
+                                badgeText="BEST SELLER"
+                                qty={1}
+                                priceUnit="$"
+=======
                                 price={2600}
                                 showBadge={true}
                                 badgeText="BEST SELLER"
                                 qty={1}
                                 priceUnit="Tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                 getValue={this.getQty}
                               />
                               <QuickBite
                                 id={3}
                                 title="Chicken Tikka Sub"
+<<<<<<< HEAD
+                                price={250}
+                                showBadge={true}
+                                badgeText="Pure Veg"
+                                badgeVariant="success"
+                                priceUnit="$"
+=======
                                 price={2550}
                                 showBadge={true}
                                 badgeText="Pure Veg"
                                 badgeVariant="success"
                                 priceUnit="Tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                 getValue={this.getQty}
                               />
                               <QuickBite
                                 id={1}
                                 title="Chicken Tikka Sub"
+<<<<<<< HEAD
+                                price={250}
+                                priceUnit="$"
+=======
                                 price={2100}
                                 priceUnit="tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                 getValue={this.getQty}
                               />
                               <QuickBite
                                 id={2}
                                 title="Cheese corn Roll"
+<<<<<<< HEAD
+                                price={600}
+                                showBadge={true}
+                                badgeText="BEST SELLER"
+                                priceUnit="$"
+=======
                                 price={1700}
                                 showBadge={true}
                                 badgeText="BEST SELLER"
                                 priceUnit="tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                 getValue={this.getQty}
                               />
                               <QuickBite
                                 id={3}
                                 title="Chicken Tikka Sub"
+<<<<<<< HEAD
+                                price={250}
+                                showBadge={true}
+                                badgeText="Pure Veg"
+                                badgeVariant="success"
+                                priceUnit="$"
+=======
                                 price={2500}
                                 showBadge={true}
                                 badgeText="Pure Veg"
                                 badgeVariant="success"
                                 priceUnit="Tk"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                 getValue={this.getQty}
                               />
                             </div>
@@ -389,8 +487,13 @@ class Detail extends React.Component {
                               <div className="gmap_canvas">
                                 <iframe
                                   title="addressMap"
+<<<<<<< HEAD
+                                  width="300"
+                                  height="170"
+=======
                                   width="500"
                                   height="270"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                                   id="gmap_canvas"
                                   src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=9&ie=UTF8&iwloc=&output=embed"
                                   frameBorder="0"
@@ -408,11 +511,19 @@ class Detail extends React.Component {
                           </p>
                           <p className="mb-2 text-black">
                             <Icofont icon="phone-circle text-primary mr-2" />{" "}
+<<<<<<< HEAD
+                            +91 01234-56789, +91 01234-56789
+                          </p>
+                          <p className="mb-2 text-black">
+                            <Icofont icon="email text-primary mr-2" />{" "}
+                            iamosahan@gmail.com, osahaneat@gmail.com
+=======
                             +88 01234-567892, +88 011234-56789
                           </p>
                           <p className="mb-2 text-black">
                             <Icofont icon="email text-primary mr-2" />{" "}
                             iamdinespot@gmail.com, fdinespot@gmail.com
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                           </p>
                           <p className="mb-2 text-black">
                             <Icofont icon="clock-time text-primary mr-2" />{" "}
@@ -612,7 +723,11 @@ class Detail extends React.Component {
                             image="/img/user/6.png"
                             ImageAlt=""
                             ratingStars={5}
+<<<<<<< HEAD
+                            Name="Gurdeep Osahan"
+=======
                             Name="Mike Jackson"
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                             profileLink="#"
                             reviewDate="Tue, 20 Mar 2020"
                             reviewText="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
@@ -668,9 +783,15 @@ class Detail extends React.Component {
                       OFFER
                     </h6>
                     <p className="mb-0">
+<<<<<<< HEAD
+                      60% off on orders above $99 | Use coupon{" "}
+                      <span className="text-danger font-weight-bold">
+                        OSAHAN50
+=======
                       40% off on orders above 8000tk | Use coupon{" "}
                       <span className="text-danger font-weight-bold">
                         DINESPOT50
+>>>>>>> cc02ffd47d9c0190747c13f29ec80efe861bf31d
                       </span>
                     </p>
                     <div className="icon-overlap">
