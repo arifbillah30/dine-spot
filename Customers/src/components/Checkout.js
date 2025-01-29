@@ -65,7 +65,7 @@ class Checkout extends React.Component {
                         title="Work"
                         icoIcon="briefcase"
                         iconclassName="icofont-3x"
-                        address="NCC, Model Town Rd, Pritm Nagar, Model Town, Ludhiana, Punjab 141002, India"
+                        address="24/3 road no.7 Zigatola bus stand, Dhanmondi, Dhaka, Bangladesh"
                       />
                     </Col>
                     <Col md={6}>
@@ -73,7 +73,7 @@ class Checkout extends React.Component {
                         title="Work"
                         icoIcon="briefcase"
                         iconclassName="icofont-3x"
-                        address="NCC, Model Town Rd, Pritm Nagar, Model Town, Ludhiana, Punjab 141002, India"
+                        address="16/b road no.15 banani, Gulshan road, Dhaka, Bangladesh"
                       />
                     </Col>
                     <Col md={6}>
@@ -81,7 +81,7 @@ class Checkout extends React.Component {
                         title="Work"
                         icoIcon="briefcase"
                         iconclassName="icofont-3x"
-                        address="NCC, Model Town Rd, Pritm Nagar, Model Town, Ludhiana, Punjab 141002, India"
+                        address="230/c east road, Chittagong main city, Bangladesh"
                       />
                     </Col>
                     <Col md={6}>
@@ -90,7 +90,7 @@ class Checkout extends React.Component {
                         icoIcon="briefcase"
                         iconclassName="icofont-3x"
                         type="newAddress"
-                        address="NCC, Model Town Rd, Pritm Nagar, Model Town, Ludhiana, Punjab 141002, India"
+                        address="Road no.15 main city, Rajshahi, Bangladesh"
                         onAddNewClick={() =>
                           this.setState({ showAddressModal: true })
                         }
@@ -197,7 +197,7 @@ class Checkout extends React.Component {
                                     to="/thanks"
                                     className="btn btn-success btn-block btn-lg"
                                   >
-                                    PAY $1329
+                                    PAY 12500tk
                                     <Icofont icon="long-arrow-right" />
                                   </Link>
                                 </Form.Group>
@@ -270,7 +270,7 @@ class Checkout extends React.Component {
                                     to="/thanks"
                                     className="btn btn-success btn-block btn-lg"
                                   >
-                                    PAY $1329
+                                     PAY 12500tk
                                     <Icofont icon="long-arrow-right" />
                                   </Link>
                                 </Form.Group>
@@ -377,7 +377,7 @@ class Checkout extends React.Component {
                                     to="/thanks"
                                     className="btn btn-success btn-block btn-lg"
                                   >
-                                    PAY $1329
+                                    PAY 12500tk
                                     <Icofont icon="long-arrow-right" />
                                   </Link>
                                 </Form.Group>
@@ -396,7 +396,7 @@ class Checkout extends React.Component {
                                 to="/thanks"
                                 className="btn btn-success btn-block btn-lg"
                               >
-                                PAY $1329
+                                PAY 12500tk
                                 <Icofont icon="long-arrow-right" />
                               </Link>
                             </Form>
@@ -430,8 +430,8 @@ class Checkout extends React.Component {
                 <div className="bg-white rounded shadow-sm mb-2">
                   <CheckoutItem
                     itemName="Chicken Tikka Sub"
-                    price={314}
-                    priceUnit="$"
+                    price={1800}
+                    priceUnit="Tk"
                     id={1}
                     qty={2}
                     show={true}
@@ -441,8 +441,8 @@ class Checkout extends React.Component {
                   />
                   <CheckoutItem
                     itemName="Cheese corn Roll"
-                    price={260}
-                    priceUnit="$"
+                    price={700}
+                    priceUnit="Tk"
                     id={1}
                     qty={1}
                     show={true}
@@ -452,8 +452,8 @@ class Checkout extends React.Component {
                   />
                   <CheckoutItem
                     itemName="Mixed Veg"
-                    price={122}
-                    priceUnit="$"
+                    price={1300}
+                    priceUnit="Tk"
                     id={1}
                     qty={1}
                     show={true}
@@ -463,8 +463,8 @@ class Checkout extends React.Component {
                   />
                   <CheckoutItem
                     itemName="Black Dal Makhani"
-                    price={652}
-                    priceUnit="$"
+                    price={1199}
+                    priceUnit="Tk"
                     id={1}
                     qty={1}
                     show={true}
@@ -474,8 +474,8 @@ class Checkout extends React.Component {
                   />
                   <CheckoutItem
                     itemName="Mixed Veg"
-                    price={122}
-                    priceUnit="$"
+                    price={951}
+                    priceUnit="Tk"
                     id={1}
                     qty={1}
                     show={true}
@@ -513,11 +513,11 @@ class Checkout extends React.Component {
                 <div className="mb-2 bg-white rounded p-2 clearfix">
                   <p className="mb-1">
                     Item Total{" "}
-                    <span className="float-right text-dark">$3140</span>
+                    <span className="float-right text-dark">11300</span>
                   </p>
                   <p className="mb-1">
                     Restaurant Charges{" "}
-                    <span className="float-right text-dark">$62.8</span>
+                    <span className="float-right text-dark">1100tk</span>
                   </p>
                   <p className="mb-1">
                     Delivery Fee
@@ -534,25 +534,25 @@ class Checkout extends React.Component {
                         <Icofont icon="info-circle" />
                       </span>
                     </OverlayTrigger>
-                    <span className="float-right text-dark">$10</span>
+                    <span className="float-right text-dark">100tk</span>
                   </p>
                   <p className="mb-1 text-success">
                     Total Discount
-                    <span className="float-right text-success">$1884</span>
+                    <span className="float-right text-success">8420tk</span>
                   </p>
                   <hr />
                   <h6 className="font-weight-bold mb-0">
-                    TO PAY <span className="float-right">$1329</span>
+                    TO PAY <span className="float-right">12500tk</span>
                   </h6>
                 </div>
                 <Link to="/thanks" className="btn btn-success btn-block btn-lg">
-                  PAY $1329
+                  PAY 12500tk
                   <Icofont icon="long-arrow-right" />
                 </Link>
               </div>
               <div className="pt-2"></div>
               <div className="alert alert-success" role="alert">
-                You have saved <strong>$1,884</strong> on the bill
+                You have saved <strong>8420tk</strong> on the bill
               </div>
               <div className="pt-2"></div>
               <div className="text-center pt-2">

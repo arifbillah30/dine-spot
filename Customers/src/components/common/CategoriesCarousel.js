@@ -10,7 +10,7 @@ class CategoriesCarousel extends React.Component {
 	         <div className="item">
 	         	<ProductBox 
 	         		boxClass='osahan-category-item'
-	         		title='American'
+	         		title='Egg Sandwich'
 	         		counting='156'
 			   		image='img/list/1.png'
 			   		imageClass='img-fluid'
@@ -21,7 +21,7 @@ class CategoriesCarousel extends React.Component {
 	         <div className="item">
 	         	<ProductBox 
 	         		boxClass='osahan-category-item'
-	         		title='Pizza'
+	         		title='Cashew Nut-Salad'
 	         		counting='120'
 			   		image='img/list/2.png'
 			   		imageClass='img-fluid'
@@ -32,7 +32,7 @@ class CategoriesCarousel extends React.Component {
 	         <div className="item">
 	         	<ProductBox 
 	         		boxClass='osahan-category-item'
-	         		title='Healthy'
+	         		title='Veg- rice bowl'
 	         		counting='130'
 			   		image='img/list/3.png'
 			   		imageClass='img-fluid'
@@ -43,7 +43,7 @@ class CategoriesCarousel extends React.Component {
 	         <div className="item">
 	         	<ProductBox 
 	         		boxClass='osahan-category-item'
-	         		title='Vegetarian'
+	         		title='Soup-Packages'
 	         		counting='120'
 			   		image='img/list/4.png'
 			   		imageClass='img-fluid'
@@ -54,7 +54,7 @@ class CategoriesCarousel extends React.Component {
 	         <div className="item">
 	         	<ProductBox 
 	         		boxClass='osahan-category-item'
-	         		title='Chinese'
+	         		title='Burger-Package '
 	         		counting='111'
 			   		image='img/list/5.png'
 			   		imageClass='img-fluid'
@@ -65,7 +65,7 @@ class CategoriesCarousel extends React.Component {
 	         <div className="item">
 	         	<ProductBox 
 	         		boxClass='osahan-category-item'
-	         		title='Hamburgers'
+	         		title='Family-combo'
 	         		counting='958'
 			   		image='img/list/6.png'
 			   		imageClass='img-fluid'
@@ -76,7 +76,7 @@ class CategoriesCarousel extends React.Component {
 	         <div className="item">
 	         	<ProductBox 
 	         		boxClass='osahan-category-item'
-	         		title='Dessert'
+	         		title='Italian-rice-bowl'
 	         		counting='56'
 			   		image='img/list/7.png'
 			   		imageClass='img-fluid'
@@ -87,7 +87,7 @@ class CategoriesCarousel extends React.Component {
 	         <div className="item">
 	         	<ProductBox 
 	         		boxClass='osahan-category-item'
-	         		title='Chicken'
+	         		title='Salad Sandwich'
 	         		counting='40'
 			   		image='img/list/8.png'
 			   		imageClass='img-fluid'
@@ -98,7 +98,7 @@ class CategoriesCarousel extends React.Component {
 	         <div className="item">
 	         	<ProductBox 
 	         		boxClass='osahan-category-item'
-	         		title='Indian'
+	         		title='Indian local-food'
 	         		counting='156'
 			   		image='img/list/9.png'
 			   		imageClass='img-fluid'

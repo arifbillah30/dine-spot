@@ -84,7 +84,7 @@ class List extends React.Component {
 											        custom
 											        type='checkbox'
 											        id='custom-cb5'
-											        label={<React.Fragment>PAU <small className="text-black-50">20</small></React.Fragment>}
+											        label={<React.Fragment>Banani<small className="text-black-50">20</small></React.Fragment>}
 											      />
 			                                    <div className="mt-2"><Link to="#" className="link">See all</Link></div>
 			                                  </div>
@@ -155,7 +155,7 @@ class List extends React.Component {
 											        custom
 											        type='checkbox'
 											        id='custom-cb12'
-											        label={<React.Fragment>Dessert <small className="text-black-50">50</small></React.Fragment>}
+											        label={<React.Fragment>Italian Rice bowl <small className="text-black-50">50</small></React.Fragment>}
 											      />
 
 											      <Form.Check 
@@ -323,7 +323,7 @@ class List extends React.Component {
 										        label='Dinespot Eat'
 										      />
 			                                 <hr />
-			                                 <small className="text-success">Use code DINESPOT50 to get 50% OFF (up to $30) on first 5 orders. T&Cs apply.</small>
+			                                 <small className="text-success">Use code DINESPOT50 to get 50% OFF (up to 2000Tk) on first 5 orders. T&Cs apply.</small>
 			                              </div>
 			                           </div>
 			                        </div>

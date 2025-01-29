@@ -48,7 +48,7 @@ class TrackOrder extends React.Component {
 				                     	icoIcon='ui-press'
 				                     	iconClass='text-danger food-item'
 				                     	title='Chicken Tikka Sub 12" (30 cm) x 1'
-				                     	price='$314'
+				                     	price='1599Tk'
 				                    />
 				                    <CartDropdownItem 
 				                     	icoIcon='ui-press'
@@ -66,7 +66,7 @@ class TrackOrder extends React.Component {
 				                     	icoIcon='ui-press'
 				                     	iconClass='text-danger food-item'
 				                     	title='Chicken Tikka Sub 12" (30 cm) x 1'
-				                     	price='$314'
+				                     	price='1599Tk'
 				                    />
 				                  <hr />
 	                              <p className="mb-0 font-weight-bold text-black">TOTAL BILL  <span className="float-right text-secondary">$209</span></p>
