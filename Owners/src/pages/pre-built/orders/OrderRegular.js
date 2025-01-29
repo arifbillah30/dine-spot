@@ -23,16 +23,7 @@ import {
   Row,
   Col,
 } from "../../../components/Component";
-import {
-  UncontrolledDropdown,
-  DropdownMenu,
-  DropdownToggle,
-  DropdownItem,
-  
-  ModalBody,
-  Modal,
-  Badge
-} from "reactstrap";
+import { UncontrolledDropdown, DropdownMenu, DropdownToggle, DropdownItem, ModalBody, Modal, Badge } from "reactstrap";
 import { useForm } from "react-hook-form";
 import { getDateStructured } from "../../../utils/Utils";
 
@@ -133,7 +124,7 @@ const OrderRegular = () => {
   };
 
   useEffect(() => {
-    reset(formData)
+    reset(formData);
   }, [formData]);
 
   // function to load detail data
@@ -170,7 +161,7 @@ const OrderRegular = () => {
   const markAsDelivered = (id) => {
     let newData = data;
     let index = newData.findIndex((item) => item.id === id);
-    newData[index].status = "Delivered";
+    newData[index].status = "Ready for Booking";
     setData([...newData]);
   };
 
@@ -206,7 +197,12 @@ const OrderRegular = () => {
   // Change Page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-  const { reset, register, handleSubmit, formState: { errors } } = useForm();
+  const {
+    reset,
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   return (
     <React.Fragment>
@@ -215,7 +211,7 @@ const OrderRegular = () => {
         <BlockHead size="sm">
           <BlockBetween>
             <BlockHeadContent>
-              <BlockTitle page>Orders</BlockTitle>
+              <BlockTitle page>Table Booking</BlockTitle>
             </BlockHeadContent>
             <BlockHeadContent>
               <div className="toggle-wrap nk-block-tools-toggle">
@@ -236,7 +232,7 @@ const OrderRegular = () => {
                   }}
                 >
                   <Icon name="plus"></Icon>
-                  <span>Add Order</span>
+                  <span>Add Tables</span>
                 </Button>
               </div>
             </BlockHeadContent>
@@ -248,7 +244,7 @@ const OrderRegular = () => {
             <div className="card-inner">
               <div className="card-title-group">
                 <div className="card-title">
-                  <h5 className="title">All Orders</h5>
+                  <h5 className="title">All Reservations</h5>
                 </div>
                 <div className="card-tools me-n1">
                   <ul className="btn-toolbar gx-1">
@@ -472,7 +468,7 @@ const OrderRegular = () => {
                   <span className="sub-text">Customer</span>
                 </DataTableRow>
                 <DataTableRow size="md">
-                  <span className="sub-text">Purchased</span>
+                  <span className="sub-text"># of Booked Table</span>
                 </DataTableRow>
                 <DataTableRow>
                   <span className="sub-text">Total</span>
@@ -551,9 +547,7 @@ const OrderRegular = () => {
                         ></span>
                         <Badge
                           className="badge-sm badge-dot has-bg d-none d-sm-inline-flex"
-                          color={
-                            item.status === "Delivered" ? "success" : "warning"
-                          }
+                          color={item.status === "Delivered" ? "success" : "warning"}
                         >
                           {item.status}
                         </Badge>
@@ -569,7 +563,7 @@ const OrderRegular = () => {
                       </DataTableRow>
                       <DataTableRow className="nk-tb-col-tools">
                         <ul className="nk-tb-actions gx-1">
-                          {item.status !== "Delivered" && (
+                          {item.status !== "Ready for Booking" && (
                             <li className="nk-tb-action-hidden" onClick={() => markAsDelivered(item.id)}>
                               <TooltipComponent
                                 tag="a"
@@ -676,7 +670,6 @@ const OrderRegular = () => {
         <Modal isOpen={view.add} toggle={() => onFormCancel()} className="modal-dialog-centered" size="lg">
           <ModalBody>
             <a href="#cancel" className="close">
-              {" "}
               <Icon
                 name="cross-sm"
                 onClick={(ev) => {
@@ -686,75 +679,138 @@ const OrderRegular = () => {
               ></Icon>
             </a>
             <div className="p-2">
-              <h5 className="title">Add Order</h5>
+              <h5 className="title">Add Tables</h5>
               <div className="mt-4">
                 <form onSubmit={handleSubmit(onFormSubmit)}>
                   <Row className="g-3">
-                    <Col md="12">
-                      <div className="form-group">
-                        <label className="form-label" htmlFor="customer">
-                          Customer Name
-                        </label>
-                        <div className="form-control-wrap">
-                          <input
-                            type="text"
-                            className="form-control"
-                            {...register('customer', {
-                              required: "This field is required",
-                            })}
-                            onChange={(e) => setFormData({ ...formData, customer: e.target.value })}
-                            value={formData.customer} />
-                          {errors.customer && <span className="invalid">{errors.customer.message}</span>}
-                        </div>
-                      </div>
-                    </Col>
+                    {/* <Col md="12">
+              <div className="form-group">
+                <label className="form-label" htmlFor="customer">Customer Name</label>
+                <div className="form-control-wrap">
+                  <input
+                    type="text"
+                    className="form-control"
+                    {...register('customer', { required: "This field is required" })}
+                    onChange={(e) => setFormData({ ...formData, customer: e.target.value })}
+                    value={formData.customer}
+                  />
+                  {errors.customer && <span className="invalid">{errors.customer.message}</span>}
+                </div>
+              </div>
+            </Col> */}
+
                     <Col md="6">
                       <div className="form-group">
                         <label className="form-label" htmlFor="date">
-                          Date of order
+                          Date of Order
                         </label>
                         <div className="form-control-wrap">
                           <DatePicker
                             selected={formData.date}
                             className="form-control"
-                            onChange={(date) => setFormData({ ...formData, date: date })}
+                            onChange={(date) => setFormData({ ...formData, date })}
                           />
                           {errors.date && <span className="invalid">{errors.date.message}</span>}
                         </div>
                       </div>
                     </Col>
+
                     <Col md="6">
                       <div className="form-group">
-                        <label className="form-label" htmlFor="purchased">
-                          Purchased Product
+                        <label className="form-label" htmlFor="openingTime">
+                          Opening Time
+                        </label>
+                        <div className="form-control-wrap">
+                          <input
+                            type="time"
+                            className="form-control"
+                            {...register("openingTime", { required: "Opening time is required" })}
+                            onChange={(e) => setFormData({ ...formData, openingTime: e.target.value })}
+                            value={formData.openingTime}
+                          />
+                          {errors.openingTime && <span className="invalid">{errors.openingTime.message}</span>}
+                        </div>
+                      </div>
+                    </Col>
+
+                    <Col md="6">
+                      <div className="form-group">
+                        <label className="form-label" htmlFor="closingTime">
+                          Closing Time
+                        </label>
+                        <div className="form-control-wrap">
+                          <input
+                            type="time"
+                            className="form-control"
+                            {...register("closingTime", { required: "Closing time is required" })}
+                            onChange={(e) => setFormData({ ...formData, closingTime: e.target.value })}
+                            value={formData.closingTime}
+                          />
+                          {errors.closingTime && <span className="invalid">{errors.closingTime.message}</span>}
+                        </div>
+                      </div>
+                    </Col>
+
+                    <Col md="6">
+                      <div className="form-group">
+                        <label className="form-label" htmlFor="tableType">
+                          Table Type
                         </label>
                         <div className="form-control-wrap">
                           <input
                             type="text"
                             className="form-control"
-                            {...register('purchased', { required: "This is required" })}
-                            value={formData.purchased}
-                            onChange={(e) => setFormData({ ...formData, purchased: e.target.value })}/>
+                            {...register("tableType", { required: "This is required" })}
+                            value={formData.tableType}
+                            onChange={(e) => setFormData({ ...formData, purchased: e.target.value })}
+                          />
                           {errors.purchased && <span className="invalid">{errors.purchased.message}</span>}
                         </div>
                       </div>
                     </Col>
+
                     <Col md="6">
                       <div className="form-group">
-                        <label className="form-label" htmlFor="total">
-                          Total Price
+                        <label className="form-label" htmlFor="chair">
+                          Chair Selection
                         </label>
                         <div className="form-control-wrap">
-                          <input
-                            type="number"
-                            className="form-control"
-                            {...register('total', { required: "This is required" })}
-                            value={formData.total}
-                            onChange={(e) => setFormData({ ...formData, total: e.target.value })}/>
-                          {errors.total && <span className="invalid">{errors.total.message}</span>}
+                          <RSelect
+                            name="chair"
+                            options={[
+                              { value: "2chair", label: "2 Chairs" },
+                              { value: "4chair", label: "4 Chairs" },
+                              { value: "6chair", label: "6 Chairs" },
+                              { value: "8chair", label: "8 Chairs" },
+                            ]}
+                            onChange={(e) => setFormData({ ...formData, chair: e.value })}
+                            value={{ value: formData.chair, label: formData.chair }}
+                          />
                         </div>
                       </div>
                     </Col>
+
+                    <Col md="6">
+                      <div className="form-group">
+                        <label className="form-label" htmlFor="requiredTime">
+                          Allocated Time
+                        </label>
+                        <div className="form-control-wrap">
+                          <RSelect
+                            name="Allocated Time"
+                            options={[
+                              { value: "15min", label: "15 Minutes" },
+                              { value: "30min", label: "30 Minutes" },
+                              { value: "45min", label: "45 Minutes" },
+                              { value: "60min", label: "60 Minutes" },
+                            ]}
+                            onChange={(e) => setFormData({ ...formData, requiredTime: e.value })}
+                            value={{ value: formData.requiredTime, label: formData.requiredTime }}
+                          />
+                        </div>
+                      </div>
+                    </Col>
+
                     <Col md="6">
                       <div className="form-group">
                         <label className="form-label" htmlFor="status">
@@ -764,11 +820,11 @@ const OrderRegular = () => {
                           <RSelect
                             name="status"
                             options={[
-                              { value: "On Hold", label: "On Hold" },
-                              { value: "Delivered", label: "Delivered" },
+                              { value: "Booked", label: "Booked" },
+                              { value: "Ready for Booking", label: "Ready for Booking" },
                             ]}
                             onChange={(e) => setFormData({ ...formData, status: e.value })}
-                            value={{value: formData.status, label: formData.status}}
+                            value={{ value: formData.status, label: formData.status }}
                           />
                         </div>
                       </div>
@@ -777,7 +833,7 @@ const OrderRegular = () => {
                     <Col size="12">
                       <Button color="primary" type="submit">
                         <Icon className="plus"></Icon>
-                        <span>Add Order</span>
+                        <span>Add Tables</span>
                       </Button>
                     </Col>
                   </Row>
@@ -815,9 +871,7 @@ const OrderRegular = () => {
                   ></span>
                   <Badge
                     className="badge-sm badge-dot has-bg d-none d-sm-inline-flex"
-                    color={
-                      formData.status === "Delivered" ? "success" : "warning"
-                    }
+                    color={formData.status === "Delivered" ? "success" : "warning"}
                   >
                     {formData.status}
                   </Badge>

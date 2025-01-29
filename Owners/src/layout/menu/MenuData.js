@@ -1,5 +1,4 @@
 const menu = [
-
   // {
   //   icon: "bag",
   //   text: "E-Commerce Panel",
@@ -65,7 +64,7 @@ const menu = [
         link: "/app-calender",
       },
       {
-        text: "View Reservations",
+        text: "Add Tables",
         link: "/order-list-regular",
       },
       {
@@ -96,7 +95,6 @@ const menu = [
     link: "/user-list-default",
   },
 
- 
   // {
   //   icon: "file-docs",
   //   text: "AML / KYCs",
