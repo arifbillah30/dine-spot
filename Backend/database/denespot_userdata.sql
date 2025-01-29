@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.38, for Win64 (x86_64)
 --
--- Host: localhost    Database: swiftshop
+-- Host: localhost    Database: dinespot
 -- ------------------------------------------------------
 -- Server version	8.0.39
 
@@ -16,32 +16,28 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `product`
+-- Table structure for table `userdata`
 --
 
-DROP TABLE IF EXISTS `product`;
+DROP TABLE IF EXISTS `userdata`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `product` (
-  `productName` int DEFAULT NULL,
-  `productPrice` varchar(255) DEFAULT NULL,
-  `color` text,
-  `price` decimal(10,2) DEFAULT NULL,
-  `description` int DEFAULT '0',
-  `category_id` int DEFAULT NULL,
-  `image_url` varchar(255) DEFAULT NULL,
-  `features` varchar(45) DEFAULT NULL,
-  `brand` varchar(45) DEFAULT NULL
+CREATE TABLE `userdata` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`email`),
+  UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `product`
+-- Dumping data for table `userdata`
 --
 
-LOCK TABLES `product` WRITE;
-/*!40000 ALTER TABLE `product` DISABLE KEYS */;
-/*!40000 ALTER TABLE `product` ENABLE KEYS */;
+LOCK TABLES `userdata` WRITE;
+/*!40000 ALTER TABLE `userdata` DISABLE KEYS */;
+/*!40000 ALTER TABLE `userdata` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -53,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-09-30 23:17:02
+-- Dump completed on 2025-01-29  5:09:04

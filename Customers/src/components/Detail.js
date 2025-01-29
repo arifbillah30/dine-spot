@@ -122,19 +122,16 @@ class Detail extends React.Component {
                 <Col md={12}>
                   <Nav id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Order Online</Nav.Link>
+                      <Nav.Link eventKey="first">Menu</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Gallery</Nav.Link>
+                      <Nav.Link eventKey="second">Restaurant Info</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Restaurant Info</Nav.Link>
+                      <Nav.Link eventKey="third">Book A Table</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="fourth">Book A Table</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="fifth">Ratings & Reviews</Nav.Link>
+                      <Nav.Link eventKey="fourth">Ratings & Reviews</Nav.Link>
                     </Nav.Item>
                   </Nav>
                 </Col>
@@ -172,64 +169,6 @@ class Detail extends React.Component {
                         <ItemsCarousel />
 
                         <Row>
-                          <h5 className="mb-4 mt-3 col-md-12">Best Sellers</h5>
-                          <Col md={4} sm={6} className="mb-4">
-                            <BestSeller
-                              id={1}
-                              title="World Famous"
-                              subTitle="North Indian • American • Pure veg"
-                              imageAlt="Product"
-                              image="img/list/1.png"
-                              imageClass="img-fluid item-img"
-                              price={250}
-                              priceUnit="$"
-                              isNew={true}
-                              showPromoted={true}
-                              promotedVariant="dark"
-                              favIcoIconColor="text-danger"
-                              rating="3.1 (300+)"
-                              getValue={this.getQty}
-                            />
-                          </Col>
-
-                          <Col md={4} sm={6} className="mb-4">
-                            <BestSeller
-                              id={2}
-                              title="The osahan Restaurant"
-                              subTitle="North Indian • American • Pure veg"
-                              imageAlt="Product"
-                              image="img/list/6.png"
-                              imageClass="img-fluid item-img"
-                              price={250}
-                              priceUnit="$"
-                              qty={1}
-                              showPromoted={true}
-                              promotedVariant="dark"
-                              favIcoIconColor="text-danger"
-                              rating="3.1 (300+)"
-                              getValue={this.getQty}
-                            />
-                          </Col>
-
-                          <Col md={4} sm={6} className="mb-4">
-                            <BestSeller
-                              id={3}
-                              title="Bite Me Sandwiches"
-                              subTitle="North Indian • American • Pure veg"
-                              imageAlt="Product"
-                              image="img/list/3.png"
-                              imageClass="img-fluid item-img"
-                              price={250}
-                              priceUnit="$"
-                              showPromoted={true}
-                              promotedVariant="dark"
-                              favIcoIconColor="text-danger"
-                              rating="3.1 (300+)"
-                              getValue={this.getQty}
-                            />
-                          </Col>
-                        </Row>
-                        <Row>
                           <h5 className="mb-4 mt-3 col-md-12">
                             Quick Bites{" "}
                             <small className="h6 text-black-50">3 ITEMS</small>
@@ -241,14 +180,12 @@ class Detail extends React.Component {
                                 title="Chicken Tikka Sub"
                                 price={250}
                                 priceUnit="$"
-                                getValue={this.getQty}
                               />
                               <QuickBite
                                 id={2}
                                 title="Cheese corn Roll"
                                 price={600}
                                 showBadge={true}
-                                badgeText="BEST SELLER"
                                 qty={1}
                                 priceUnit="$"
                                 getValue={this.getQty}
@@ -290,7 +227,6 @@ class Detail extends React.Component {
                                 image="/img/2.jpg"
                                 price={600}
                                 showBadge={true}
-                                badgeText="BEST SELLER"
                                 qty={1}
                                 priceUnit="$"
                                 getValue={this.getQty}
@@ -329,7 +265,6 @@ class Detail extends React.Component {
                                 title="Cheese corn Roll"
                                 price={600}
                                 showBadge={true}
-                                badgeText="BEST SELLER"
                                 qty={1}
                                 priceUnit="$"
                                 getValue={this.getQty}
@@ -356,7 +291,6 @@ class Detail extends React.Component {
                                 title="Cheese corn Roll"
                                 price={600}
                                 showBadge={true}
-                                badgeText="BEST SELLER"
                                 priceUnit="$"
                                 getValue={this.getQty}
                               />
@@ -375,11 +309,6 @@ class Detail extends React.Component {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <div className="position-relative">
-                          <GalleryCarousel />
-                        </div>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
                         <div
                           id="restaurant-info"
                           className="bg-white rounded shadow-sm p-4 mb-4"
@@ -484,7 +413,7 @@ class Detail extends React.Component {
                           </div>
                         </div>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="fourth">
+                      <Tab.Pane eventKey="third">
                         <div
                           id="book-a-table"
                           className="bg-white rounded shadow-sm p-4 mb-5 rating-review-select-page"
@@ -540,7 +469,7 @@ class Detail extends React.Component {
                           </Form>
                         </div>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="fifth">
+                      <Tab.Pane eventKey="fourth">
                         <div
                           id="ratings-and-reviews"
                           className="bg-white rounded shadow-sm p-4 mb-4 clearfix restaurant-detailed-star-rating"
@@ -675,108 +604,6 @@ class Detail extends React.Component {
                     </p>
                     <div className="icon-overlap">
                       <Icofont icon="sale-discount" />
-                    </div>
-                  </div>
-
-                  <div className="generator-bg rounded shadow-sm mb-4 p-4 osahan-cart-item">
-                    <h5 className="mb-1 text-white">Your Order</h5>
-                    <p className="mb-4 text-white">6 Items</p>
-                    <div className="bg-white rounded shadow-sm mb-2">
-                      <CheckoutItem
-                        itemName="Chicken Tikka Sub"
-                        price={314}
-                        priceUnit="$"
-                        id={1}
-                        qty={2}
-                        show={true}
-                        minValue={0}
-                        maxValue={7}
-                        getValue={this.getQty}
-                      />
-                      <CheckoutItem
-                        itemName="Cheese corn Roll"
-                        price={260}
-                        priceUnit="$"
-                        id={2}
-                        qty={1}
-                        show={true}
-                        minValue={0}
-                        maxValue={7}
-                        getValue={this.getQty}
-                      />
-                      <CheckoutItem
-                        itemName="Mixed Veg"
-                        price={122}
-                        priceUnit="$"
-                        id={3}
-                        qty={1}
-                        show={true}
-                        minValue={0}
-                        maxValue={7}
-                        getValue={this.getQty}
-                      />
-                      <CheckoutItem
-                        itemName="Black Dal Makhani"
-                        price={652}
-                        priceUnit="$"
-                        id={1}
-                        qty={1}
-                        show={true}
-                        minValue={0}
-                        maxValue={7}
-                        getValue={this.getQty}
-                      />
-                      <CheckoutItem
-                        itemName="Mixed Veg"
-                        price={122}
-                        priceUnit="$"
-                        id={4}
-                        qty={1}
-                        show={true}
-                        minValue={0}
-                        maxValue={7}
-                        getValue={this.getQty}
-                      />
-                    </div>
-                    <div className="mb-2 bg-white rounded p-2 clearfix">
-                      <Image
-                        fluid
-                        className="float-left"
-                        src="/img/wallet-icon.png"
-                      />
-                      <h6 className="font-weight-bold text-right mb-2">
-                        Subtotal : <span className="text-danger">$456.4</span>
-                      </h6>
-                      <p className="seven-color mb-1 text-right">
-                        Extra charges may apply
-                      </p>
-                      <p className="text-black mb-0 text-right">
-                        You have saved $955 on the bill
-                      </p>
-                    </div>
-                    <Link
-                      to="/thanks"
-                      className="btn btn-success btn-block btn-lg"
-                    >
-                      Checkout
-                      <Icofont icon="long-arrow-right" />
-                    </Link>
-                    <div className="pt-2"></div>
-                    <div className="alert alert-success" role="alert">
-                      You have saved <strong>$1,884</strong> on the bill
-                    </div>
-                    <div className="pt-2"></div>
-                    <div className="text-center pt-2">
-                      <Image
-                        fluid
-                        src="https://dummyimage.com/352x504/ccc/ffffff.png&text=Google+ads"
-                      />
-                    </div>
-                    <div className="text-center pt-2">
-                      <Image
-                        fluid
-                        src="https://dummyimage.com/352x504/ccc/ffffff.png&text=Google+ads"
-                      />
                     </div>
                   </div>
                 </Col>

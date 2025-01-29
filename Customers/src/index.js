@@ -1,18 +1,19 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client"; // Update import to react-dom/client
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-ReactDOM.render(
+// Create a root using the new API
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// Render your app
+root.render(
   <Router>
     <Route path="/" component={App} />
-  </Router>,
-  document.getElementById("root")
+  </Router>
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+// Service worker registration
 serviceWorker.unregister();
